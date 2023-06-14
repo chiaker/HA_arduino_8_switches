@@ -104,7 +104,7 @@ void onSwitchCommand(bool state, HASwitch* sender)
     } else if (sender == &switch7) {
         digitalWrite(LED_PIN7, (state ? HIGH : LOW));
     } else if (sender == &switch8) {
-        digitalWrite(LED_PIN2, (state ? HIGH : LOW));
+        digitalWrite(LED_PIN8, (state ? HIGH : LOW));
     } 
 
     sender->setState(state); // report state back to the Home Assistant
